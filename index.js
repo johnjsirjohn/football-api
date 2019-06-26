@@ -1,5 +1,6 @@
-const Sequelize = require('./db');
-
+const Sequelize = require('sequelize');
+const Model = require('../football-api/team/model');
+const Team = require('../football-api/team/model');
 const express = require('express');
 
 const app = express();
