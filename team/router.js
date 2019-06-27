@@ -4,7 +4,7 @@ const Team = require('./model');
 const router = new Router();
 
 router.get(
-  'https://powerful-refuge-37146.herokuapp.com/team', 
+  '/team', 
   (request, response, next) =>
   Team
     .findAll()
