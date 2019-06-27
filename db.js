@@ -13,4 +13,4 @@ sequelize
   .catch(console.error);
 
 module.exports = sequelize;
-export DATABASE_URL=postgres://$(whoami);
+
