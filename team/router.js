@@ -10,6 +10,15 @@ router.get(
     .findAll()
     .then(teams => response.send(teams))
     .catch(error => next(error))
-);
+)
+
+router.post(
+  '/team', 
+  (request, response, next) =>
+  Team
+    .create(request.body)
+    .then(teams => response.json({teams: teams}))
+    .catch(error => next(error))
+)
 
 module.exports = router;
